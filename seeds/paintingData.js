@@ -2,67 +2,67 @@ const { Painting } = require('../models');
 
 const paintingData = [
     {
-        title: 'Intro to HTML',
+        title: 'HTML Introduction',
         gallery_id: 1
     },
     {
-        title: 'Intro to HTML',
+        title: 'HTML Elements',
         gallery_id: 1
     },
     {
-        title: 'Intro to HTML',
+        title: 'HTML Attributes',
         gallery_id: 1
     },
     {
-        title: 'Intro to HTML',
+        title: 'HTML Comments',
         fgallery_id: 1
     },
     {
-        title: 'Intro to CSS',
+        title: 'CSS Introduction',
         gallery_id: 2
     },
     {
-        title: 'Intro to CSS',
+        title: 'CSS Syntax',
         gallery_id: 2
     },
     {
-        title: 'Intro to CSS',
+        title: 'CSS Selectors',
         gallery_id: 2
     },
     {
-        title: 'Intro to CSS',
+        title: 'CSS Box Model',
         gallery_id: 2
     },
     {
-        title: 'Intro to JavaScript',
+        title: 'JavaScript Introduction',
         gallery_id: 3
     },
     {
-        title: 'Intro to JavaScript',
+        title: 'JavaScript Statements',
         gallery_id: 3
     },
     {
-        title: 'Intro to JavaScript',
+        title: 'JavaScript Syntax ',
         gallery_id: 3
     },
     {
-        title: 'Intro to JavaScript',
+        title: 'JavaScript Objects',
         gallery_id: 3
     },
     {
-        title: 'Intro to mySQL',
+        title: 'SQL Intro',
         gallery_id: 4
     },
     {
-        title: 'Intro to mySQL',
+        title: 'SQL Database',
         gallery_id: 4
     },
     {
-        title: 'Intro to mySQL',
+        title: 'SQL Syntax',
         gallery_id: 4
     },
     {
-        title: 'Intro to mySQL',
+        title: 'SQL Select',
         gallery_id: 4
     },
 ];
