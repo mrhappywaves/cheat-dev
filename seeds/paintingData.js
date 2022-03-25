@@ -1,72 +1,72 @@
-const { /*asdasd*/ } = require('../models');
+const { Painting } = require('../models');
 
-const cheatSheetData = [
+const paintingData = [
     {
         title: 'Intro to HTML',
-        frontPage_id: 1
-    },
-    {
-        title: 'Intro to HTML',
-        frontPage_id: 1
+        gallery_id: 1
     },
     {
         title: 'Intro to HTML',
-        frontPage_id: 1
+        gallery_id: 1
     },
     {
         title: 'Intro to HTML',
-        frontPage_id: 1
+        gallery_id: 1
+    },
+    {
+        title: 'Intro to HTML',
+        fgallery_id: 1
     },
     {
         title: 'Intro to CSS',
-        frontPage_id: 2
+        gallery_id: 2
     },
     {
         title: 'Intro to CSS',
-        frontPage_id: 2
+        gallery_id: 2
     },
     {
         title: 'Intro to CSS',
-        frontPage_id: 2
+        gallery_id: 2
     },
     {
         title: 'Intro to CSS',
-        frontPage_id: 2
+        gallery_id: 2
     },
     {
         title: 'Intro to JavaScript',
-        frontPage_id: 3
+        gallery_id: 3
     },
     {
         title: 'Intro to JavaScript',
-        frontPage_id: 3
+        gallery_id: 3
     },
     {
         title: 'Intro to JavaScript',
-        frontPage_id: 3
+        gallery_id: 3
     },
     {
         title: 'Intro to JavaScript',
-        frontPage_id: 3
+        gallery_id: 3
     },
     {
         title: 'Intro to mySQL',
-        frontPage_id: 4
+        gallery_id: 4
     },
     {
         title: 'Intro to mySQL',
-        frontPage_id: 4
+        gallery_id: 4
     },
     {
         title: 'Intro to mySQL',
-        frontPage_id: 4
+        gallery_id: 4
     },
     {
         title: 'Intro to mySQL',
-        frontPage_id: 4
+        gallery_id: 4
     },
 ];
 
-const seedCheat = () => asdasd.bulkCreate(cheatSheetData);
+const seedPaintings = () => Painting.bulkCreate(paintingData);
 
-module.exports = seedCheat;
+module.exports = seedPaintings;
