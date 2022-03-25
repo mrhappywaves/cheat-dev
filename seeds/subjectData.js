@@ -4,7 +4,7 @@ const subjectData = [
     {
         title: 'HTML Introduction',
         description: '',
-        examole: '',
+        example: '',
         topic_id: 1
     },
     {
