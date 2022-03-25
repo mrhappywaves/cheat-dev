@@ -1,17 +1,19 @@
-const { Painting } = require('../models');
+const { Subject } = require('../models');
 
-const paintingData = [
+const subjectData = [
     {
         title: 'HTML Introduction',
-        gallery_id: 1
+        description: '',
+        examole: '',
+        topic_id: 1
     },
     {
         title: 'HTML Elements',
-        gallery_id: 1
+        topic_id: 1
     },
     {
         title: 'HTML Attributes',
-        gallery_id: 1
+        topic_id: 1
     },
     {
         title: 'HTML Comments',
@@ -19,54 +21,54 @@ const paintingData = [
     },
     {
         title: 'CSS Introduction',
-        gallery_id: 2
+        topic_id: 2
     },
     {
         title: 'CSS Syntax',
-        gallery_id: 2
+        topic_id: 2
     },
     {
         title: 'CSS Selectors',
-        gallery_id: 2
+        topic_id: 2
     },
     {
         title: 'CSS Box Model',
-        gallery_id: 2
+        topic_id: 2
     },
     {
         title: 'JavaScript Introduction',
-        gallery_id: 3
+        topic_id: 3
     },
     {
         title: 'JavaScript Statements',
-        gallery_id: 3
+        topic_id: 3
     },
     {
         title: 'JavaScript Syntax ',
-        gallery_id: 3
+        topic_id: 3
     },
     {
         title: 'JavaScript Objects',
-        gallery_id: 3
+        topic_id: 3
     },
     {
         title: 'SQL Intro',
-        gallery_id: 4
+        topic_id: 4
     },
     {
         title: 'SQL Database',
-        gallery_id: 4
+        topic_id: 4
     },
     {
         title: 'SQL Syntax',
-        gallery_id: 4
+        topic_id: 4
     },
     {
         title: 'SQL Select',
-        gallery_id: 4
+        topic_id: 4
     },
 ];
 
-const seedPaintings = () => Painting.bulkCreate(paintingData);
+const seedSubject = () => Subject.bulkCreate(subjectData);
 
-module.exports = seedPaintings;
+module.exports = seedSubject;
