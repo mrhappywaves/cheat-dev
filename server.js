@@ -11,7 +11,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // Express App
 const app = express();
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3301;
 
 // Sessions
 app.use(session({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
