@@ -1,0 +1,12 @@
+<section class="container">
+  <h3 class="topic-name">{{topic.name}}</h3>
+  {{#if topic_id}}
+  <section class="flex-row justify-center">
+    {{#each topic.subjects as |subject|}}
+    {{> subject-details}}
+    {{/each}}
+  </section>
+</section>
+{{else}}
+<a href="/login">Please login in to view the data</a>
+{{/if}}
