@@ -1,0 +1,11 @@
+{{#if loggedIn}}
+<section class="subject">
+  <img src="/images/{{subject.filename}}" alt="{{subject.description}}">
+  <div class="subject-details">
+    <h3>{{subject.title}}</h3>
+    <p>Exhibition open until: {{ format_date subject.exhibition_date}}</p>
+  </div>
+</section>
+{{else}}
+<a href="/login">You must login first to view this page</a>
+{{/if}}
