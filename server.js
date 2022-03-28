@@ -10,7 +10,9 @@ const helpers = require('./utils/helpers');
 
 // Express App
 const app = express();
-const PORT = process.env.PORT || 3301;
+const PORT = process.env.PORT || 3306;
+
+const db = require('./models');
 
 // Set up sessions with cookies
 const sess = {
