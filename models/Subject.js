@@ -15,10 +15,6 @@ Subject.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    artist: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     exhibition_date: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -31,10 +27,10 @@ Subject.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    gallery_id: {
+    topic_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'gallery',
+        model: 'topic',
         key: 'id',
       },
     },
@@ -43,7 +39,7 @@ Subject.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'painting',
+    modelName: 'subject',
   }
 );
 

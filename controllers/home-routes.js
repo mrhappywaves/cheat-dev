@@ -1,23 +1,23 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Topic, Subject } = require('../models');
 
-// GET all galleries for homepage
+// GET all Topics for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
+    const dbTopicData = await Topic.findAll({
       include: [
         {
-          model: Painting,
+          model: Subject,
           attributes: ['filename', 'description'],
         },
       ],
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const topics = dbTopicData.map((topic) =>
+      topic.get({ plain: true })
     );
     res.render('homepage', {
-      galleries,
+      topics,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -26,13 +26,13 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET one gallery
-router.get('/gallery/:id', async (req, res) => {
+// GET one topic
+router.get('/topic/:id', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findByPk(req.params.id, {
+    const dbTopicData = await Topic.findByPk(req.params.id, {
       include: [
         {
-          model: Painting,
+          model: Subject,
           attributes: [
             'id',
             'title',
@@ -45,21 +45,21 @@ router.get('/gallery/:id', async (req, res) => {
       ],
     });
 
-    const gallery = dbGalleryData.get({ plain: true });
-    res.render('gallery', { gallery, loggedIn: req.session.loggedIn });
+    const topic = dbTopicData.get({ plain: true });
+    res.render('topic', { topic, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-// GET one painting
-router.get('/painting/:id', async (req, res) => {
+// GET one subject
+router.get('/subject/:id', async (req, res) => {
   try {
-    const dbPaintingData = await Painting.findByPk(req.params.id);
+    const dbSubjectData = await Subject.findByPk(req.params.id);
 
-    const painting = dbPaintingData.get({ plain: true });
-    res.render('painting', { painting, loggedIn: req.session.loggedIn });
+    const subject = dbSubjectData.get({ plain: true });
+    res.render('subject', { subject, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
