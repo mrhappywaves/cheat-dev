@@ -22,6 +22,10 @@ Topic.init(
     description: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    info: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
   {
