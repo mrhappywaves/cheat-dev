@@ -36,7 +36,6 @@ router.get('/topic/:id', async (req, res) => {
           attributes: [
             'id',
             'title',
-            'artist',
             'exhibition_date',
             'filename',
             'description',
