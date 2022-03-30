@@ -40,4 +40,3 @@ Subject.init(
 );
 
 module.exports = Subject;
-

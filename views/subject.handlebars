@@ -1,15 +1,13 @@
-<section class="card">
-  <a href="/subject/{{id}}">
-    <header>{{title}} {{definition}} {{example}}</header>
-    
-
-    <div class="card-body">
-      {{!-- <img src="/images/{{filename}}" alt="{{description}}"> --}}
-      {{!-- <p>{{title}}</p> --}}
-      <p>{{definition}}</p>
-      <p>{{example}}</p>
-    </div>
-  </a>
+{{#if loggedIn}}
+<section class="subject">
+  {{!-- <img src="/images/{{painting.filename}}" alt="{{painting.description}}"> --}}
+  <div class="subject-details">
+   <h3>{{subject.title}}</h3>
+   <p>{{subject.definition}}</p>
+   <p>{{subject.example}}</p>
 </section>
+{{else}}
+<a href="/login">Please login to view the content</a>
+{{/if}}
 
-{{!-- only header showing --}}
+{{!-- somehow this is not showing on the page, still need to fix it --}}

@@ -28,8 +28,9 @@ router.get('/topic/:id', async (req, res) => {
         {
           model: Subject,
           attributes: [
+            'id',
             'title',
-            'description',
+            'definition',
             'example'
           ],
         },

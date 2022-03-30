@@ -31,4 +31,3 @@ const topicData = [
 const seedTopic = () => Topic.bulkCreate(topicData);
 
 module.exports = seedTopic;
-

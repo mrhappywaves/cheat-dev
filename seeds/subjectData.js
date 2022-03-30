@@ -49,3 +49,4 @@ const subjectData = [
 const seedSubject = () => Subject.bulkCreate(subjectData);
 
 module.exports = seedSubject;
+
