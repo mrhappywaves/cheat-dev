@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 router.get('/topic/:id', async (req, res) => {
   try {
     const topicData = await Topic.findByPk(req.params.id, {
-      inclued: [
+      include: [
         {
           model: Subject,
           attributes: [
@@ -49,6 +49,31 @@ router.get('/subject/:id', async (req, res) => {
     res.render('subject', { subject, loggedIn: req.session.loggedIn});
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+// Get all topics subjects
+router.get('/topics/:id', async (req, res) => {
+  try {
+    const topicData = await Topic.findByPk(req.params.id, {
+      include: [
+        {
+          model: Subject,
+          attributes: [
+            'id',
+            'title',
+            'definition',
+            'example'
+          ],
+        },
+      ]
+    });
+
+    // All the topic data is sent to subjects handlebar
+    const topic = topicData.get({ plain: true });
+    res.render('subjects', { topic, loggedIn: req.session.loggedIn});
+  } catch (err) {
+    res.status(500).json(err)
   }
 });
 

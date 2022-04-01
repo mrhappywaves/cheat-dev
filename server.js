@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
-const helpers = require('./utils/helpers');
+const helpers = require('./utils/auth');
 
 const app = express();
 const PORT = process.env.PORT || 3301;
@@ -40,10 +40,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
-// require('./controllers/home-routes')(app);
-// require('./controllers/index')(app);
-// require('./controllers/api/index')(app);
-// require('./controllers/api/user-routes')(app);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
@@ -52,9 +48,3 @@ sequelize.sync({ force: false }).then(() => {
     )
   );
 });
-
-// db.sequelize.sync().then(function() {
-//   app.listen(PORT, function() {
-//     console.log(`===> Listening on port ${PORT}. Visit http://localhost:${PORT} in your brower`, PORT, PORT);
-//   });
-// });
