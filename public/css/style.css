@@ -1,5 +1,5 @@
 :root {
-    --primary: #3d5852;
+    --primary: #231F20;
     --secondary: #86938f;
     --tertiary: #5e877f;
     --quatrinary: #6c6b67;
@@ -31,9 +31,10 @@
   }
 
   header {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
+    color: var(--light);
   }
   
   main {
@@ -44,19 +45,20 @@
   
   nav {
     display: flex;
-    background-color: var(--secondary);
+    background-color: var(--light);
   }
   
   nav a {
-    color: var(--light);
+    color: var(--primary);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
   }
   
   nav a:hover {
-    color: var(--secondary);
-    background-color: var(--dark);
+    color: var(--primary);
+    background-color: #CCCCFF;
   }
   
   /* .topic {
@@ -102,9 +104,11 @@
   
   /* CARDS */
   .card {
-    margin: 20px;
+    margin: 25px;
     flex: 0 1 300px;
-    border: 7px double var(--dark);
+    /* border: 7px double var(--dark); */
+    align-items: center;
+    margin-top: 20%;
     border-radius: 10px;
     background-color: var(--light);
     color: var(--dark);

@@ -46,7 +46,7 @@ router.get('/subject/:id', async (req, res) => {
   try {
     const subjectData = await Subject.findByPk(req.params.id);
     const subject = subjectData.get({ plain: true });
-    res.render('subject', { subject, loggedIn: req.seesion.loggedIn});
+    res.render('subject', { subject, loggedIn: req.session.loggedIn});
   } catch (err) {
     res.status(500).json(err);
   }
