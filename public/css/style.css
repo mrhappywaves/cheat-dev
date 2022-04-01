@@ -16,13 +16,15 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: rgb(170, 182, 201);
+    background-color: rgb(187, 192, 201);
   }
   
   a {
     color: var(--dark);
     text-decoration: none;
   }
+
+  
   
   a:visited {
     color: inherit;
@@ -31,22 +33,13 @@
   header {
     padding: 40px;
     text-align: center;
-    background: var(--primary);
-    color: var(--light);
+    background-color: var(--secondary);
   }
   
   main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-  }
-  
-  aside {
-    flex: 0;
-    background-color: var(--tertiary);
-    padding: 80px;
-    text-align: left;
-    color: var(--light);
   }
   
   nav {
@@ -66,7 +59,7 @@
     background-color: var(--dark);
   }
   
-  .topic {
+  /* .topic {
     flex: row;
     width: 100%;
     background-color: #fff;
@@ -75,7 +68,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .btn-no-style {
     background: none;
@@ -90,7 +83,8 @@
   
   img {
     max-width: 100%;
-    height: auto;
+    object-fit: contain;
+    
   }
   
   .subject {
@@ -118,16 +112,18 @@
   
   .login-card {
     align-items: center;
+    /* background-color:rgb(170, 182, 201); */
+    /* color:rgba(0, 0, 0, 1); */
     /* margin: 30px; */
     /* flex: 0 0 50%; */
     /* max-width: 50%; */
-    padding: 20px;
-    border: 3px solid var(--dark);
-    border-radius: var(--border-radius);
-    border-style: double;
-    border-width: thick;
-    background-color: #577a7c;
-    color: var(--light);
+    /* padding: 20px; */
+    /* border: 3px solid var(--dark); */
+    /* border-radius: var(--border-radius); */
+    /* border-style: double; */
+    /* border-width: thick; */
+    /* background-color: #577a7c; */
+    /* color: var(--light); */
   }
   
   .card header {
@@ -146,7 +142,7 @@
     font-weight: bold;
   }
   
-  .topic-name {
+  /* .topic-name {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px var(--secondary);
@@ -155,12 +151,12 @@
     padding-bottom: 30px;
     padding-right: 100px;
     padding-left: 100px;
-  }
+  } */
   
   /* LAYOUT */
   .container {
     display: row;
     flex-flow: column wrap;
-    /* align-content: flex-start; */
+    align-content: flex-start;
     align-items: center;
   }

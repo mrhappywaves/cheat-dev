@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevXp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/jass.css"> -->
+  <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <h1 class="text-white p-3 fw-bold">DevXp</h1>
+        <!-- <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">CSS</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <ul class="nav">
+              <li class="nav-items">
+                <a class="nav-link fw-bold">Login</a>
+              </li>
+            </ul>
+            <!-- <a href="/login" class="nav-link">Login</a> -->
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-success" type="submit"><a href='/login'>Login</a></button> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- <header>
+    <h1 class="display-2">DevXp</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/">HTML</a>
+    <a href="/">CSS</a>
+    <a href="/">JavaScript</a>
+    <a href="/">SQL</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login" class="justify-content-end">Login</a>
+    {{/if}}
+  </nav> -->
+
+  <main class="container container-fluid col-12 col-xl-10">
+    <!-- {{{body}}} -->
+  <div class="row col-12">
+    <div class="col-lg-5 mt-3 mx-auto">
+        <div class="login-card p-4 p-md-5">
+          <h2 class="mb-3">Login</h2>
+          <form class="login-form">
+            <div class="form-group mb-3">
+              <label for="email-login">Email:</label>
+              <input class="form-input" type="text" id="email-login" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password-login">Password:</label>
+              <input class="form-input" type="password" id="password-login" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+          </form>
+          <hr>
+          <p>If you don't have a account, please <a href="/signup"><u>Sign Up</u></a></p>
+        </div>
+    </div>
+    
+    <div class="col-lg-5 mt-3 mx-auto">
+        <div class="login-card p-4 p-md-5">
+          <h2 class="mb-3">Sign Up</h2>
+          <form class="signup-form ">
+            <div class="form-group mb-3">
+              <label for="usename-signup">Username:</label>
+              <input class="form-input" type="text" id="username-sign"> 
+            </div>
+            <div class="form-group mb-3">
+              <label for="email-signup">Email:</label>
+              <input class="form-input" type="text" id="email-signup">
+            </div>
+            <div class="form-group mb-3">
+              <label for="password-signup">Password:</label>
+              <input class="form-group" type="password" id="password-signup">
+            </div>
+            <div class="form-group mb-3">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+          </form>
+          <hr>
+          <p>Already a user, <a href="/login"><u>Login</u></a> here</p>
+        </div>
+    </div>
+  </div>
+  </main>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

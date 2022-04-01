@@ -1,12 +1,27 @@
+
 {{#if loggedIn}}
-<section class="container">
-  <h1 class="topic-name">{{topic.name}}</h1>
-  <section>
-    {{#each topic.subjects as |subject|}}
-    {{> subject-details}}
-    {{/each}}
-  </section>
-</section>
+<div class="card">
+  <div class="card-title">
+    <h1 class="fs-1 fw-b text-center"><a href="/{{topic.name}}">{{topic.name}}</a></h1>
+  </div>
+  <div class="card-body">
+    <p>{{topic.info}}</p>
+  </div>
+  <button class="btn btn-primary fs-4" id="learning-btn" type="submit" onclick="nextPage()">Let Start Learning Now >>></button>
+</div>
+{{!-- <div class="container">
+  {{#each topic.subjects as |subject| }}
+  {{> subject-details}}
+  {{/each}}
+</div> --}}
 {{else}}
-<p>Please login to view the content</p>
-{{/if}}
+
+<h2 class="text-center fw-b fs-2 mt-5">Please <a href="/login">Login</a> first</h2>
+{{/if}} 
+
+<script>
+  function nextPage() {
+    location.replace('/subject.html')
+  }
+  
+</script>

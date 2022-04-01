@@ -1,41 +1,45 @@
-<div class="row justify-space-between-md">
-  <div class="login-card">
-    <h2 class="page-title">Login</h2>
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">Login</button>
-      </div>
-    </form>
-    <br>
-    <p>Or <a href="/signup">Sign Up</a></p>
-  </div>
-  <div class="login-card">
-    <h2 class="page-title">Signup</h2>
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">Username:</label>
-        <input class="form-input" type="text" id="username-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
+
+<div class="row col-lg-12">
+  {{!-- <div class="col-md-5 mt-3 mx-auto"> --}}
+    <div class="login-card p-4 p-md-5 col-lg-4 mt-3">
+      <h2 class="mb-3">Login</h2>
+      <form class="form login-form">
+        <div class="form-group mb-3">
+          <label for="email-login">Email:</label>
+          <input class="form-input" type="text" id="email-login" />
+        </div>
+        <div class="form-group mb-3">
+          <label for="password-login">Password:</label>
+          <input class="form-input" type="password" id="password-login" />
+        </div>
+        <div class="form-group mb-3">
+          <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+      <hr><p>No account? <a href="/signup">Sign up</a> here</p>
+    </div>
+  {{!-- <div class="col-lg-5 mt-3 mx-auto">   --}}
+    <div class="login-card p-4 p-md-5 col-lg-4 mt-3">
+      <h2 class="mb-3">Signup</h2>
+      <form class="form signup-form">
+        <div class="form-group mb-3">
+          <label for="username-signup">Username:</label>
+          <input class="form-input" type="text" id="username-signup"/>
+        </div>
+        <div class="form-group mb-3">
+          <label for="email-signup">Email:</label>
+          <input class="form-input" type="text" id="email-signup"/>
+        </div>
+        <div class="form-group mb-3">
+          <label for="password-signup">Password:</label>
+          <input class="form-input" type="password" id="password-signup"/>
+        </div>
+        <div class="form-group mb-3">
+          <button class="btn btn-primary" type="submit">signup</button>
+        </div>
+      </form>
+      <hr><p>Already a user, <a href="/login">Login</a> here</p>
+    </div>
   </div>
 </div>
 

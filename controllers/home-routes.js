@@ -1,9 +1,6 @@
 const router = require('express').Router();
 const {Topic, Subject, User } = require('../models');
-
-// router.get('/', (req, res) => {
-//   res.render('homepage');
-// });
+const withAuth = require('../utils/auth');
 
 // GET all topics for homepage
 router.get('/', async (req, res) => {
@@ -66,6 +63,10 @@ router.get('/login', async (req, res) => {
 
 // Signup route
 router.get('/signup', async (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
   res.render('signup');
 });
 

@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Subject extends Model {}
+class HTML extends Model {}
 
-Subject.init(
+HTML.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -23,7 +23,7 @@ Subject.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    refID: {
+    topic_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'topic',
@@ -35,8 +35,8 @@ Subject.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'subject',
+    modelName: 'html',
   }
 );
 
-module.exports = Subject;
+module.exports = HTML;
