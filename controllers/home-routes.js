@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 });
 
 // GET one topic
-router.get('/topic/:id', async (req, res) => {
+router.get('/topic/:id', withAuth, async (req, res) => {
   try {
     const topicData = await Topic.findByPk(req.params.id, {
       include: [
@@ -35,25 +35,25 @@ router.get('/topic/:id', async (req, res) => {
     });
 
     const topic = topicData.get({ plain: true });
-    res.render('topic', { topic, loggedIn: req.session.loggedIn});
+    res.render('topic', { topic, loggedIn: true});
   } catch (err) {
     res.status(500).json(err)
   }
 });
 
 // GET one subject
-router.get('/subject/:id', async (req, res) => {
+router.get('/subject/:id', withAuth, async (req, res) => {
   try {
     const subjectData = await Subject.findByPk(req.params.id);
     const subject = subjectData.get({ plain: true });
-    res.render('subject', { subject, loggedIn: req.session.loggedIn});
+    res.render('subject', { subject, loggedIn: true});
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 // Get all topics subjects
-router.get('/topics/:id', async (req, res) => {
+router.get('/topics/:id', withAuth, async (req, res) => {
   try {
     const topicData = await Topic.findByPk(req.params.id, {
       include: [
@@ -71,7 +71,7 @@ router.get('/topics/:id', async (req, res) => {
 
     // All the topic data is sent to subjects handlebar
     const topic = topicData.get({ plain: true });
-    res.render('subjects', { topic, loggedIn: req.session.loggedIn});
+    res.render('subjects', { topic, loggedIn: true});
   } catch (err) {
     res.status(500).json(err)
   }
