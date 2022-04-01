@@ -1,0 +1,14 @@
+{{#if loggedIn}}
+<div class="card">
+  <div class="card-title">
+    <h1 class="fs-1 fw-b text-center"><a href="/{{topic.name}}">{{topic.name}}</a></h1>
+  </div>
+  <div class="card-body">
+    <p>{{topic.info}}</p>
+  </div>
+  {{!-- Buttons can have href property to them. The button link calls a /topics/topic.id route which is defined in home-routes.js --}}
+  <button class="btn btn-primary fs-4" id="learning-btn" type="submit" onclick="location.href='/topics/{{topic.id}}'">Let's Start Learning Now</button>
+</div>
+{{else}}
+<h2 class="text-center fw-b fs-2 mt-5">Please <a href="/login">Login</a> first</h2>
+{{/if}} 
