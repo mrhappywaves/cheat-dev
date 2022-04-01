@@ -24,16 +24,13 @@
     text-decoration: none;
   }
 
-  
-  
   a:visited {
     color: inherit;
   }
 
   header {
-    padding: 20px;
-    text-align: center;
-    background-color: var(--primary);
+    padding: 10px;
+    background-color: rgb(97, 135, 172);
     color: var(--light);
   }
   
@@ -45,11 +42,9 @@
   
   nav {
     display: flex;
-    background-color: var(--light);
   }
   
   nav a {
-    color: var(--primary);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -57,36 +52,12 @@
   }
   
   nav a:hover {
-    color: var(--primary);
-    background-color: #CCCCFF;
-  }
-  
-  /* .topic {
-    flex: row;
-    width: 100%;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  } */
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 100%;
-    transition: color 0.1s;
-    margin-left: 16px;
+    background-color: var(--light);
   }
   
   img {
     max-width: 100%;
-    object-fit: contain;
-    
+    object-fit: contain;  
   }
   
   .subject {
@@ -106,28 +77,13 @@
   .card {
     margin: 25px;
     flex: 0 1 300px;
-    /* border: 7px double var(--dark); */
     align-items: center;
-    margin-top: 20%;
     border-radius: 10px;
     background-color: var(--light);
-    color: var(--dark);
   }
   
   .login-card {
     align-items: center;
-    /* background-color:rgb(170, 182, 201); */
-    /* color:rgba(0, 0, 0, 1); */
-    /* margin: 30px; */
-    /* flex: 0 0 50%; */
-    /* max-width: 50%; */
-    /* padding: 20px; */
-    /* border: 3px solid var(--dark); */
-    /* border-radius: var(--border-radius); */
-    /* border-style: double; */
-    /* border-width: thick; */
-    /* background-color: #577a7c; */
-    /* color: var(--light); */
   }
   
   .card header {
@@ -135,9 +91,13 @@
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    background-color: var(--tertiary);
+    /* background-color: var(--tertiary); */
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+
+  .card-title h1 {
+    color: rosybrown;
   }
   
   .card-body {
@@ -146,17 +106,6 @@
     font-weight: bold;
   }
   
-  /* .topic-name {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 5px var(--secondary);
-    border: 10px groove var(--light);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 100px;
-  } */
-  
   /* LAYOUT */
   .container {
     display: row;
@@ -164,3 +113,5 @@
     align-content: flex-start;
     align-items: center;
   }
+
+  
