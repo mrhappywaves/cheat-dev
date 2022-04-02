@@ -66,11 +66,28 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
   }
-  
+
   .subject-details {
     text-align: center;
     padding: 10px 20px;
     font-weight: bold;
+  }
+
+  .subject-example {
+    /* text-align: left; */
+    width:100%;
+    height: 150px;
+    border: 6px solid #231F20;
+    padding: 50px;
+    margin: 20px;
+    font-size: 24px;
+    background-color: white;
+    /* margin-left:10%; */
+  }
+
+  .subject-details h3 {
+    color:#231F20;
+    font-size: 68px;
   }
   
   /* CARDS */
@@ -105,7 +122,28 @@
     text-align: center;
     font-weight: bold;
   }
+
+  .topic-orange {
+    border: 2px solid #231F20; 
+    margin: 15px;
+    padding:10px;
+    background-color: rgb(97, 135, 172);
+    font-weight: bold;
+    
+  }
   
+  .topic-apples {
+    align-items: center;
+    margin: 25px;
+    padding:20px;
+    background-color: rgb(97, 135, 172);
+    font-weight: bold;
+    font-size: 28px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40%;;
+  }
+
   /* LAYOUT */
   .container {
     display: row;
@@ -113,5 +151,6 @@
     align-content: flex-start;
     align-items: center;
   }
+
 
   
