@@ -1,18 +1,24 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://i.pinimg.com/originals/97/3c/68/973c68753cda563ba5be1c498aba1d6c.jpg" class="d-block w-100" alt="...">
+      <img src="https://i.pinimg.com/originals/97/3c/68/973c68753cda563ba5be1c498aba1d6c.jpg" class="d-block w-100"
+        alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://i.pinimg.com/originals/97/3c/68/973c68753cda563ba5be1c498aba1d6c.jpg" class="d-block w-100" alt="...">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0c4b561-e96a-4369-974c-1f70f60a595b/d6rqv03-f11f8415-8774-42fd-a7fd-f6db64de4823.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwYzRiNTYxLWU5NmEtNDM2OS05NzRjLTFmNzBmNjBhNTk1YlwvZDZycXYwMy1mMTFmODQxNS04Nzc0LTQyZmQtYTdmZC1mNmRiNjRkZTQ4MjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v4884aYwx6_kUQGz5wnUxm8Rc8RHzmPgX6lx3546S1s" class="d-block w-100"
+        alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://i.pinimg.com/originals/97/3c/68/973c68753cda563ba5be1c498aba1d6c.jpg" class="d-block w-100" alt="...">
+      <img src="https://img.wallpapersafari.com/desktop/1920/1080/51/41/W75wXM.png" class="d-block w-100"
+        alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -24,11 +30,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<div class="row mt-3">
-    <p class="fs-4">Choose a topic to start boosting your web development knowledge.</p>
-</div>
-<div class="container-fluid d-flex justify-content-center">
+<div class="encQuote">
+  <div class="row mt-3">
+    <p class="fs-4">Choose a topic to start boosting your web development knowledge</p>
+  </div>
+  <div class="container-fluid d-flex justify-content-center">
     {{#each topics as |topic|}}
     {{> topic-details}}
     {{/each}}
-</div>
+  </div>
