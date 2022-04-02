@@ -18,8 +18,7 @@ const db = require('./models');
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    // Stored in milliseconds (86400 === 1 day)
-    maxAge: 86400,
+    maxAge: 24 * 60 * 60 * 1000,
   },
   resave: false,
   saveUninitialized: true,
@@ -44,7 +43,7 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
     console.log(
-      `\nServer running on port ${PORT}. Visit http://localhost:${PORT} and create an account!`, PORT, PORT
+      `\nServer running on port ${PORT}. Visit http://localhost:${PORT} and create an account!`
     )
   );
 });
