@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
     background-color: rgb(187, 192, 201);
   }
   
@@ -66,11 +65,26 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
   }
-  
+
   .subject-details {
     text-align: center;
     padding: 10px 20px;
     font-weight: bold;
+  }
+
+  .subject-example {
+    width:100%;
+    height: 150px;
+    border: 6px solid #231F20;
+    padding: 50px;
+    margin: 20px;
+    font-size: 24px;
+    background-color: white;
+  }
+
+  .subject-details h3 {
+    color:#231F20;
+    font-size: 68px;
   }
   
   /* CARDS */
@@ -81,37 +95,98 @@
     border-radius: 10px;
     background-color: var(--light);
   }
-  
-  .login-card {
-    align-items: center;
+
+  .encQuote {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px;
   }
+
+  .fs-4 {
+    text-align: center;
+  }
+
+  /* BUTTONS */
+  .topicButton{
+    min-width: 100%;
+    height: auto;
+    transform: scale(0.90);
+    transition: 0.3s;
+  }
+
+  .topic-card:hover{
+    background-color: #C0C0C0;
+  }
+
+  .nav-link,
+  .loginButton{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover{
+    background-color: #C0C0C0;
+  }
+
+  .loginButton {
+    text-align: center;
+  }
+
+  .loginButton:hover {
+    color: blue;
+    background-color: #C0C0C0;
+  } 
   
   .card header {
     color: var(--light);
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    /* background-color: var(--tertiary); */
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  }
-
-  .card-title h1 {
-    color: rosybrown;
   }
   
   .card-body {
     font-size: 1.4rem;
     text-align: center;
+    /* font-weight: bold; */
+  }
+
+  .topic-orange {
+    border: 2px solid #231F20; 
+    margin: 15px;
+    padding:10px;
+    background-color: rgb(97, 135, 172);
     font-weight: bold;
+    
   }
   
+  .topic-apples {
+    align-items: center;
+    margin: 25px;
+    padding:20px;
+    background-color: rgb(97, 135, 172);
+    font-weight: bold;
+    font-size: 28px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40%;;
+  }
+
   /* LAYOUT */
   .container {
     display: row;
     flex-flow: column wrap;
-    align-content: flex-start;
     align-items: center;
   }
+
+  .cross-auth-nav {
+    text-decoration: underline;
+  }
+
 
   
