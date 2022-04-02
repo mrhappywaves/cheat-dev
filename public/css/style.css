@@ -91,19 +91,14 @@
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    /* background-color: var(--tertiary); */
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  }
-
-  .card-title h1 {
-    color: rosybrown;
   }
   
   .card-body {
     font-size: 1.4rem;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   /* LAYOUT */
@@ -114,4 +109,8 @@
     align-items: center;
   }
 
+  #topic-header {
+    /* text-shadow: 0 3 3px rgb(153, 148, 148); */
+  }
+  
   
