@@ -16,20 +16,24 @@
       <h1 class="fs-2 px-5"><a href="/">DevXp</a></h1>
     </div>
     <nav>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <div class = "homeButton">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="/" class="nav-link">Home</a></li>
         <li><a href="/topic/1" class="nav-link">HTML</a></li>
         <li><a href="/topic/2" class="nav-link">CSS</a></li>
         <li><a href="/topic/3" class="nav-link">JavaScript</a></li>
         <li><a href="/topic/4" class="nav-link">SQL</a></li>
       </ul>
+      </div>
     </nav>
-    <div class="col-md-3 text-end px-3 mb-2">
+    <div class="loginButton">
+      <div class="col-md-3 text-end px-3 mb-2">
       {{#if loggedIn}}
       <button id="logout" class="btn-outline">Logout</button>
       {{else}}
       <a href="/login">Login</a>
       {{/if}}
+      </div>
     </div>
   </header>
   

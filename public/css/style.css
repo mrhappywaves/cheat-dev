@@ -114,4 +114,47 @@
     align-items: center;
   }
 
-  
+  .encQuote {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  /* BUTTONS */
+  .topicButton {
+    min-width: 100%;
+    height: auto;
+    transform: scale(0.90);
+    transition: 0.3s;
+  }
+
+  .topic-card:hover{
+    background-color: #C0C0C0;
+  }
+
+  .nav-link{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover{
+    background-color: #C0C0C0;
+  }
+
+  .loginButton {
+    padding-top: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transform: 0.3s;
+    text-align: center;
+  }
+
+  .loginButton:hover {
+    color: blue;
+    background-color: #C0C0C0;
+  }
