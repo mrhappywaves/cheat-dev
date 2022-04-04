@@ -21,3 +21,11 @@ MySQL, Node.js, Git
 These technologies were used for the in application development and use and for the server based technology/ processes of the application. 
 Github Projects
 Github was used to build our application as a team and to commit and push our code to further the development of the project. This is also where our team posted the current tasks to be completed and the issues at hand based off of the current importance of each issue. 
+
+
+
+Set-Up and Useing DEV XP
+
+- Clone the Repo from this page 
+- install npm and mySQl 
+- 
