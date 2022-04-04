@@ -1,9 +1,7 @@
-# 
-DEV XP
+# DEV XP
 
 
-USES
-
+## USES
 
 Dev XP is a programming assistant learning application. This application uses modern programming technologies to help the user gain experience and knowledge with multiple languages and methods. The main language our application aims to help with are HTML, CSS, Javascript and mySQL. These languages and technologies are the fundamentals to web development and will help in almost every full stack developers career. 
 For each topic we have subtopics, Ex: CSS - Selectors, Colors, Background, etc.
@@ -13,7 +11,7 @@ This application could be used by students, employed developers or hobbyists to 
 This application can be used to learn certain aspects of languages often needed to create full stack applications and projects such as SQL, Javascript, HTML and CSS.
 
 
-Technologies Used 
+## Technologies Used 
 
 HTML , CSS, Javascript
 These languages are used for the base of the application, mostly Javascript and is used for the visible portion of the application and the user interface. 
@@ -24,8 +22,11 @@ Github was used to build our application as a team and to commit and push our co
 
 
 
-Set-Up and Useing DEV XP
+## Set-Up and Useing DEV XP
 
 - Clone the Repo from this page 
+```bash
+npm install
+```
 - install npm and mySQl 
 - 
