@@ -188,5 +188,12 @@
     text-decoration: underline;
   }
 
+  .btn btn-primary {
+    background-color: rgb(102, 194, 164);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    color: black;
+  }
 
   
